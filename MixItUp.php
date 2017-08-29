@@ -26,7 +26,7 @@ class MixItUp extends \yii\base\Widget
 
     public function run()
     {
-        if($this->content) {
+        if ($this->content) {
             $this->registerAssets();
             echo $this->content . PHP_EOL;
         }
