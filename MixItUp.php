@@ -2,7 +2,6 @@
 
 namespace dominus77\mixitup3;
 
-use yii\helpers\Html;
 use yii\web\JsExpression;
 use yii\helpers\Json;
 use dominus77\mixitup3\assets\MixItUpAsset;
@@ -13,13 +12,9 @@ use dominus77\mixitup3\assets\MixItUpAsset;
  */
 class MixItUp extends \yii\base\Widget
 {
-    public $id = '';
-    public $controlItems = [];
-    public $contentItems = [];
+    public $content = '';
+    public $containerId = '';
     public $clientOptions = [];
-
-    private $_controlID;
-    private $_containerID;
 
     /**
      * Initializes the widget
@@ -27,27 +22,15 @@ class MixItUp extends \yii\base\Widget
     public function init()
     {
         parent::init();
-        $this->id = (!empty($this->id)) ? $this->id : $this->getId();
-        $this->_controlID = 'controls_' . $this->id;
-        $this->_containerID = 'container_' . $this->id;
-        $this->registerAssets();
     }
 
     public function run()
     {
-        echo Html::beginTag('div', ['id' => $this->_controlID]);
-        foreach ($this->controlItems as $item) {
-            echo $item . PHP_EOL;
+        if($this->content) {
+            $this->registerAssets();
+            echo $this->content . PHP_EOL;
         }
-        echo Html::endTag('div') . PHP_EOL;
-
-        echo Html::beginTag('div', ['id' => $this->_containerID]);
-        foreach ($this->contentItems as $item) {
-            echo $item . PHP_EOL;
-        }
-        echo Html::endTag('div') . PHP_EOL;
     }
-
 
     /**
      * Register client assets
@@ -58,8 +41,7 @@ class MixItUp extends \yii\base\Widget
         $view = $this->getView();
         MixItUpAsset::register($view);
         $script = new JsExpression("
-            var container_{$this->id} = document.querySelector('#{$this->_containerID}');
-            var mixer_{$this->id} = mixitup(container_{$this->id}, {$options});
+             mixitup('#{$this->containerId}', {$options});
         ");
         $view->registerJs($script);
     }
