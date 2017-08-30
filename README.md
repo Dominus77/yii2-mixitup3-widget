@@ -30,7 +30,7 @@ Once the extension is installed, simply use it in your code by  :
 ```php
 <?= \dominus77\mixitup3\MixItUp::widget([
     'containerId' => 'mix_container',
-    'content' => $this->render('@dominus77/mixitup3/views/content'), // example
+    'content' => $this->render('@dominus77/mixitup3/views/basic'), // example
     'clientOptions' => [
         'animation' => [
             'enable' => true,
@@ -42,7 +42,7 @@ Once the extension is installed, simply use it in your code by  :
     ],
 ]); ?>
 ```
-views\content.php
+views\basic.php
 ```php
 <?php
 

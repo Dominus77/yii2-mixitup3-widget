@@ -13,6 +13,8 @@ ExampleBasicAsset::register($this);
 
     <button type="button" class="control" data-mixitup-control data-sort="default:asc">Asc</button>
     <button type="button" class="control" data-mixitup-control data-sort="default:desc">Desc</button>
+
+    <div class="control text" data-mixitup-control data-sort="random">Shuffle</div>
 </div>
 
 <div id="mix_container">
