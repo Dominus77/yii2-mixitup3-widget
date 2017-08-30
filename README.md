@@ -30,7 +30,7 @@ Once the extension is installed, simply use it in your code by  :
 ```php
 <?= \dominus77\mixitup3\MixItUp::widget([
     'containerId' => 'mix_container',
-    'content' => $this->render('@vendor/dominus77/yii2-mixitup3-widget/views/content'), // example
+    'content' => $this->render('@dominus77/mixitup3/views/content'), // example
     'clientOptions' => [
         'animation' => [
             'enable' => true,
@@ -44,23 +44,37 @@ Once the extension is installed, simply use it in your code by  :
 ```
 views\content.php
 ```php
+<?php
+
+use dominus77\mixitup3\assets\ExampleBasicAsset;
+
+ExampleBasicAsset::register($this);
+?>
+
 <div id="mix_controls">
     <button type="button" class="control" data-mixitup-control data-filter="all" >All</button>
-    <button type="button" class="control" data-mixitup-control data-filter=".one" >One</button>
-    <button type="button" class="control" data-mixitup-control data-filter=".two" >Two</button>
-    <button type="button" class="control" data-mixitup-control data-filter=".three" >Three</button>
+    <button type="button" class="control" data-mixitup-control data-filter=".green" >Green</button>
+    <button type="button" class="control" data-mixitup-control data-filter=".blue" >Blue</button>
+    <button type="button" class="control" data-mixitup-control data-filter=".pink" >Pink</button>
     <button type="button" class="control" data-mixitup-control data-filter="none" >None</button>
+
+    <button type="button" class="control" data-mixitup-control data-sort="default:asc">Asc</button>
+    <button type="button" class="control" data-mixitup-control data-sort="default:desc">Desc</button>
 </div>
 
 <div id="mix_container">
-    <div class="mix one">1</div>
-    <div class="mix one">1</div>
-    <div class="mix two">2</div>
-    <div class="mix three">3</div>
-    <div class="mix one">1</div>
-    <div class="mix two">2</div>
-    <div class="mix three">3</div>
-    <div class="mix two">2</div>
+    <div class="mix green"></div>
+    <div class="mix green"></div>
+    <div class="mix blue"></div>
+    <div class="mix pink"></div>
+    <div class="mix green"></div>
+    <div class="mix blue"></div>
+    <div class="mix pink"></div>
+    <div class="mix blue"></div>
+
+    <div class="gap"></div>
+    <div class="gap"></div>
+    <div class="gap"></div>
 </div>
 ```
 
