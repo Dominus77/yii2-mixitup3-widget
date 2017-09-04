@@ -18,14 +18,14 @@ ExampleBasicAsset::register($this);
 </div>
 
 <div id="mix_container">
-    <div class="mix green"></div>
-    <div class="mix green"></div>
-    <div class="mix blue"></div>
-    <div class="mix pink"></div>
-    <div class="mix green"></div>
-    <div class="mix blue"></div>
-    <div class="mix pink"></div>
-    <div class="mix blue"></div>
+    <div class="mix green"><span>1</span></div>
+    <div class="mix green"><span>2</span></div>
+    <div class="mix blue"><span>3</span></div>
+    <div class="mix pink"><span>4</span></div>
+    <div class="mix green"><span>5</span></div>
+    <div class="mix blue"><span>6</span></div>
+    <div class="mix pink"><span>7</span></div>
+    <div class="mix blue"><span>8</span></div>
 
     <div class="gap"></div>
     <div class="gap"></div>
