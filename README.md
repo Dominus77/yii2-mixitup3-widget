@@ -1,4 +1,4 @@
-README
+yii2-mixitup3-widget
 ======
 Renders a [MixItUp 3](https://github.com/patrickkunka/mixitup/) widget for Yii2.
 
