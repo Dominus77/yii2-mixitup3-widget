@@ -10,14 +10,17 @@ use yii\web\AssetBundle;
  */
 class ExampleBasicAsset extends AssetBundle
 {
-    public $sourcePath = '@dominus77/mixitup3/assets/src';
+    public function init()
+    {
+        $this->sourcePath = __DIR__ . '/assets/src';
+        $this->css = [
+            'css/reset.css',
+            'css/basic.css',
+        ];
+    }
 
-    public $css = [
-        'css/reset.css',
-        'css/basic.css',
-    ];
-
-    public $depends = [
+    public
+        $depends = [
         'yii\web\JqueryAsset',
         'yii\bootstrap\BootstrapAsset',
     ];
