@@ -12,7 +12,7 @@ class ExampleBasicAsset extends AssetBundle
 {
     public function init()
     {
-        $this->sourcePath = __DIR__ . '/assets/src';
+        $this->sourcePath = __DIR__ . '/src';
         $this->css = [
             'css/reset.css',
             'css/basic.css',
