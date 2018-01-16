@@ -4,7 +4,7 @@
 [![License](https://poser.pugx.org/dominus77/yii2-mixitup3-widget/license)](https://github.com/Dominus77/yii2-mixitup3-widget/blob/master/LICENSE.md)
 [![Total Downloads](https://poser.pugx.org/dominus77/yii2-mixitup3-widget/downloads)](https://packagist.org/packages/dominus77/yii2-mixitup3-widget)
 
-Renders a [MixItUp 3](https://github.com/patrickkunka/mixitup/) widget for Yii2.
+Renders a [MixItUp 3](https://www.kunkalabs.com/mixitup/) widget for Yii2.
 
 ## Installation
 
@@ -83,7 +83,7 @@ ExampleBasicAsset::register($this);
 ```
 
 ## More Information
-Please, check the [MixItUp 3](https://github.com/patrickkunka/mixitup/)
+Please, check the [MixItUp 3](https://www.kunkalabs.com/mixitup/)
 
 ## License
 The BSD License (BSD). Please see [License File](https://github.com/Dominus77/yii2-mixitup3-widget/blob/master/LICENSE.md) for more information.
