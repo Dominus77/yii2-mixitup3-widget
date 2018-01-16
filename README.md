@@ -1,9 +1,12 @@
-yii2-mixitup3-widget
-======
+# yii2-mixitup3-widget
+
+[![Latest Stable Version](https://poser.pugx.org/dominus77/yii2-mixitup3-widget/v/stable)](https://packagist.org/packages/dominus77/yii2-mixitup3-widget)
+[![License](https://poser.pugx.org/dominus77/yii2-mixitup3-widget/license)](https://github.com/Dominus77/yii2-mixitup3-widget/blob/master/LICENSE.md)
+[![Total Downloads](https://poser.pugx.org/dominus77/yii2-mixitup3-widget/downloads)](https://packagist.org/packages/dominus77/yii2-mixitup3-widget)
+
 Renders a [MixItUp 3](https://github.com/patrickkunka/mixitup/) widget for Yii2.
 
-Installation
-------------
+## Installation
 
 The preferred way to install this extension is through [composer](http://getcomposer.org/download/).
 
@@ -22,8 +25,7 @@ or add
 to the require section of your `composer.json` file.
 
 
-Usage
------
+## Usage
 
 Once the extension is installed, simply use it in your code by  :
 
@@ -80,10 +82,8 @@ ExampleBasicAsset::register($this);
 </div>
 ```
 
-More Information
------
+## More Information
 Please, check the [MixItUp 3](https://github.com/patrickkunka/mixitup/)
 
-License
------
+## License
 The BSD License (BSD). Please see [License File](https://github.com/Dominus77/yii2-mixitup3-widget/blob/master/LICENSE.md) for more information.

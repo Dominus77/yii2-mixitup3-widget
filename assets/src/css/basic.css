@@ -152,9 +152,9 @@
     color: #5ecdde;
 }
 
-#mix_container .mix span{
+#mix_container .mix span {
     position: absolute;
-    color:#000000;
+    color: #000000;
     font-size: 14px;
     padding: 10px;
 }
@@ -195,5 +195,3 @@
         width: calc(100% / 5 - (((5 - 1) * 1rem) / 5));
     }
 }
-
-

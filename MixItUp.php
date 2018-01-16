@@ -12,8 +12,19 @@ use dominus77\mixitup3\assets\MixItUpAsset;
  */
 class MixItUp extends \yii\base\Widget
 {
+    /**
+     * @var string
+     */
     public $content = '';
+
+    /**
+     * @var string
+     */
     public $containerId = '';
+
+    /**
+     * @var array
+     */
     public $clientOptions = [];
 
     /**
@@ -24,6 +35,9 @@ class MixItUp extends \yii\base\Widget
         parent::init();
     }
 
+    /**
+     * @inheritdoc
+     */
     public function run()
     {
         if ($this->content) {

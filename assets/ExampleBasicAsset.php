@@ -10,6 +10,19 @@ use yii\web\AssetBundle;
  */
 class ExampleBasicAsset extends AssetBundle
 {
+    /**
+     * @var string
+     */
+    public $sourcePath;
+
+    /**
+     * @var array
+     */
+    public $js = [];
+
+    /**
+     * @inheritdoc
+     */
     public function init()
     {
         $this->sourcePath = __DIR__ . '/src';
@@ -19,8 +32,10 @@ class ExampleBasicAsset extends AssetBundle
         ];
     }
 
-    public
-        $depends = [
+    /**
+     * @var array
+     */
+    public $depends = [
         'yii\web\JqueryAsset',
         'yii\bootstrap\BootstrapAsset',
     ];

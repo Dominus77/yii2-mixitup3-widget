@@ -4,6 +4,7 @@ use dominus77\mixitup3\assets\ExampleBasicAsset;
 
 ExampleBasicAsset::register($this);
 ?>
+
 <div id="mix_controls">
     <button type="button" class="control" data-mixitup-control data-filter="all" >All</button>
     <button type="button" class="control" data-mixitup-control data-filter=".green" >Green</button>
